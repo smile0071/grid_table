@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    gap: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.image {
+    background-color: #3b82f6;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.price {
+    background-color: #fbbf24;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.rating {
+    background-color: #f472b6;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.description {
+    background-color: #34d399;
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.title {
+    background-color: #a78bfa;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+.reviews {
+    background-color: #3b82f6;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.features {
+    background-color: #34d399;
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+
+.availability {
+    background-color: #a78bfa;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.payment {
+    background-color: #34d399;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.delivery {
+    background-color: #fbbf24;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+.contact {
+    background-color: #3b82f6;
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+}
+
+.warranty {
+    background-color: #a78bfa;
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+}
+
+.sizes {
+    background-color: #f472b6;
+    grid-column: 3 / 5;
+    grid-row: 6 / 7;
+}
+
+.material {
+    background-color: #a78bfa;
+    grid-column: 1 / 4;
+    grid-row: 7 / 8;
+}
+
+.related {
+    background-color: #f97316;
+    grid-column: 4 / 5;
+    grid-row: 7 / 8;
+}
+
